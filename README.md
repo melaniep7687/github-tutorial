@@ -5,23 +5,28 @@ _by Melanie Paredes_
 ---
 ## Git vs. GitHub
 * **Git** keeps "snapshots" of code (would keep it saved on a single computer/hard drive)
-* In **GitHub** you can store code in the cloud (stored in GitHub which you can access from any computer), keep track of changes and collaborate with others on files
+* In **GitHub** you can store code in the cloud (stored in GitHub.com which is a website that you can access from any computer), keep track of changes and collaborate with others on files
 * Git does not need GitHub but GitHub needs Git in order to work 
 
 
 ---
-## Initial Setup (making a github account, SSH key)
+## Initial Setup 
+##### (making a github account, SSH key)
 ###### Start by making your own gitHub account. 
 1. Go to www.github.com 
-2. Make your username your hstat gmail with out the @hstat.org at the end.
+2. Make your username your hstat gmail with out the @hstat.org at the end. 
 3. On the top right click on the "+" icon and click "New Repository"
-4. Type in repository name under that category, then click on the green box that says "create new repository"
+![alt text](https://guides.github.com/features/pages/create-new-repo-button.png)
+4. Type in repository name under that category, then click on the green box that says "Create repository"
+![alt text](https://guides.github.com/activities/hello-world/create-new-repo.png)
 5. Now in the blue box there will be a link make sure this link is in SSH key (That means it will only require a one time set up). 
-6. Scroll down unitl you see something like this `git remote add origin git@github.com:melaniep7687/trial-run.git` copy and paste this into your c9 **(Copy and paste this only if the name of your repository in github is the same as the repository in c9)
+![alt text](file:///Users/a1/Desktop/Screen%20Shot%202018-10-23%20at%208.05.01%20PM.png)
+6. Scroll down unitl you see something like this `git remote add origin git@github.com:melaniep7687/trial-run.git` copy and paste this into your c9 (Copy and paste this **only** if the name of your repository in github is the same as the repository in c9 **if not make it the same**)
 
 
 ---
-## Repository Setup (`init`, your first `add` & `commit`, new repo on github, remote)
+## Repository Setup
+##### (`init`, your first `add` & `commit`, new repo on github, remote)
 ###### You can create your own blank directoey of start from someone else's directory. 
 1. Make sure you are in `~/workspace/`
 2. To make your own blank directory type `git mkdir name-of-directory` (use the same name you created for your repository in github). Now you should have a green folder to your left with the name you gave it.
@@ -36,7 +41,8 @@ _by Melanie Paredes_
 
 
 ---
-## Workflow & Commands (status, add, commit, push)
+## Workflow & Commands 
+##### (status, add, commit, push)
 1. Initialize git `git init` once you hsve cd into the file you will be working on
 2. `git status` This is a very helpful tool becasue it can help you understand what is going on. One example could be when adding files to the stage. When a file has been added or edited but not added to the stage, when you type `git status` it will show up red. Then you can add it to the stage do `git status` and it will show up green. Now it will be ready to be commited.
 3. Add this file to the "stage/picture" by typing `git add file.txt` or `git add .` this will add all the files that are in the current working repository. `git add --all` will add **all** changes including deleted and renamed files.
@@ -47,7 +53,8 @@ _by Melanie Paredes_
 
 
 ---
-## Rolling Back Changes(undo edit/add/commit/push)
+## Rolling Back Changes
+##### (undo edit/add/commit/push)
 * If you have initialized git in the wrong folder and see (master) you can just unitialize git by typing `rm -rf git`. You should no longer see (master)
 * To undo edit you type in `git checkout -- filename` this will undo any changes you have made.
 * If you added 2 files to the stage but you only meant to add one you can do `git reset HEAD filename` this will unstage whatever file(s) you just named. 
