@@ -20,7 +20,6 @@ _by Melanie Paredes_
 4. Type in repository name under that category, then click on the green box that says "Create repository"
 ![alt text](https://guides.github.com/activities/hello-world/create-new-repo.png)
 5. Now in the blue box there will be a link make sure this link is in SSH key (That means it will only require a one time set up). 
-![alt text](file:///Users/a1/Desktop/Screen%20Shot%202018-10-23%20at%208.05.01%20PM.png)
 6. Scroll down unitl you see something like this `git remote add origin git@github.com:melaniep7687/trial-run.git` copy and paste this into your c9 (Copy and paste this **only** if the name of your repository in github is the same as the repository in c9 **if not make it the same**)
 
 
